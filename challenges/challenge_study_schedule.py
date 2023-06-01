@@ -1,7 +1,4 @@
 def study_schedule(permanence_period, target_time):
-
-    if target_time is None:
-        return None
     count = 0
     try:
         for index in permanence_period:
@@ -9,6 +6,5 @@ def study_schedule(permanence_period, target_time):
             if initial_time <= target_time <= end_time:
                 count += 1
         return count
-    except:
+    except TypeError:
         return None
-
