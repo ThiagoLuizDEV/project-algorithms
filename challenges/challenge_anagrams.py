@@ -2,7 +2,7 @@ def quick_sort(param):
     if len(param) <= 1:
         return param
     if len(param) == 0:
-        return []
+        return ''
 
     pivot_value = param[len(param) // 2]
     smaller = [index for index in param if index < pivot_value]
